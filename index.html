@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            width: 30%;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;  
+        }
+        nav ul li{
+            margin:0 5px;
+        }
+        nav ul a{
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            position: relative;
+            z-index: 1;
+            align-items: center;
+        }
+        nav ul a:hover{
+            color: #f2709c;
+        }
+
+
+        .home {
+            background: linear-gradient(to right, #141e30, #243b55);
+            background-size:cover;
+            width: 100%;
+            height:130vh;
+            border-style: solid;   
+            padding-top: 50px; 
+        }
+        .define {
+            text-align: center;
+            width: 1000px;
+            height: fit-content;
+            margin: 70px;  
+            padding:20px;
+            border-style: outset;
+            align-items: center;
+            font-size: 15px;
+           
+
+        }
+        .importance {
+            text-align: center;
+            width: 1000px;
+            height: fit-content;
+            margin: 70px;  
+            padding:20px;
+            border-style: outset;
+            align-items: center;
+            font-size: 15px;
+            
+        }
+        h1 {
+            text-align: center;
+            align-items: center;
+            margin: 2%;
+            color: #ffffff;
+            margin: auto;
+            padding: 50px;
+            font-size: 100px;
+            font-family:'Times New Roman', Times, serif;
+            font-style:oblique;
+        }
+        h2 {
+            text-align: center;
+            align-items: center;
+            margin: 2%;
+            border-style: solid;
+            color: white;
+        }
+        .details {
+            background: linear-gradient(to right, #141e30, #243b55);
+            border-style: outset;
+            height: 120vh;
+            color:white;
+        }
+        .button{
+            text-decoration: none;
+            color: white;
+            margin-left: 500px;
+            font-size: 50px;
+            border-style: inset;
+            padding: 15px;
+        }
+        
+        .button:hover{
+            color: #ffffff;
+        }
+        .study{
+            height: 100vh;
+            width: 100%;
+            border-style:outset;
+            background: linear-gradient(to right, #141e30, #243b55);
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar_container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">HOME</a>
+                </li>
+                <li>
+                    <a href="#details">DETAILS</a>
+                </li>
+                <li>
+                    <a href="#study">STUDY</a>
+                </li>
+               
+
+            </ul>
+        </nav>
+    </div>
+    <!--HOME-->
+    <div class="home" id="home">
+        <h1>
+            WEB DEVELOPMENT
+        </h1>
+    </div>
+    <!--DETAILS-->
+    <div class="details" id="details">
+        <h2>
+            WEB DEVELOPMENT
+        </h2>
+        <div class="define">
+                <p id="web">Web development is the process of creating and building websites.
+                </p>
+                <p>Planning and design: This involves outlining the website's structure, navigation, and visual elements, creating wireframes and mockups to visualize the design.
+                Front-end development: This focuses on the user interface, using HTML, CSS, and JavaScript to create the visual elements, layout, and interactive features of the website.
+                Back-end development: This involves building the server-side functionality of the website, handling data storage, retrieval, and processing. It often uses languages like PHP, Python, Ruby, or Java.
+                Content creation: This involves generating and organizing text, images, videos, and other content that will be displayed on the website.
+                Testing and quality assurance: Ensuring the website functions correctly, is user-friendly, and is compatible with different browsers and devices.
+                Deployment: Making the website live on a web server so it can be accessed by users.
+                Maintenance and updates: Regularly updating and maintaining the website to address security vulnerabilities, improve performance, and add new features.
+                </p>
+        </div>  
+        <div class="importance">
+            <p>
+                Web development has become an integral part of modern society and businesses.
+            </p>
+            <p>
+            Websites are essential for businesses to reach a wider audience, establish an online presence, and drive sales.
+            Websites are used to share information, news, and resources with a global audience.
+            Websites facilitate communication and collaboration between individuals and organizations.
+            Websites offer a vast array of entertainment and educational content, from online games to educational resources.
+            Web development is a driving force behind innovation, with new technologies and web applications constantly emerging.
+            </p>
+        </div> 
+    </div>
+    <!--Study-->
+    <div class="study" id="study">
+        <h1>
+            Learn more about
+        </h1>
+        <h1>
+            WEB DEVELOPMENT
+        </h1>
+        
+        <a href="https://www.w3schools.com/" class="button">Learn more</a>
+    </div>
+    <script>
+        const button = document.querySelector('.button');
+    
+        button.addEventListener('mouseover', () => {
+            button.style.color = '#f2709c';
+        });
+    
+        button.addEventListener('mouseout', () => {
+            button.style.color = 'white';
+        });
+    </script>
+</body>
+</html>
